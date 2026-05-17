@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Recuperação Tributária · R2 Soluções Empresariais</title>
+  <meta name="description" content="Calcule em 5 minutos o potencial de recuperação tributária da sua empresa. Ferramenta interativa, gratuita e sem cadastro.">
+  <meta name="theme-color" content="#003848">
+  <link rel="canonical" href="https://www.solucoesr2.com.br/materiais/calculadora-recuperacao-tributaria.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora de Recuperação Tributária · R2 Soluções Empresariais">
+  <meta property="og:description" content="Calcule em 5 minutos o potencial de recuperação tributária da sua empresa. Ferramenta interativa, gratuita e sem cadastro.">
+  <meta property="og:url" content="https://www.solucoesr2.com.br/materiais/calculadora-recuperacao-tributaria.html">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="R2 Soluções Empresariais">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles/base.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Ir para o conteúdo principal</a>
+
+  <header class="masthead" role="banner">
+    <div class="masthead__stripe"></div>
+    <div class="container">
+      <div class="masthead__topbar">
+        <div class="masthead__topbar-left">Consultoria ativa desde 2018</div>
+        <div class="masthead__topbar-right">
+          <a href="tel:+5575991117430">(75) 99111-7430</a>
+          <a href="mailto:r2@solucoesr2.com.br">r2@solucoesr2.com.br</a>
+          <span>LGPD · Sigilo absoluto</span>
+        </div>
+      </div>
+
+      <div class="masthead__main">
+        <a href="../index.html" class="masthead__brand" aria-label="R2 Soluções Empresariais - Home">
+          <img src="../assets/logo-r2-cream-web.png" alt="R2 Soluções Empresariais" width="76" height="28">
+          <span class="masthead__brand-divider" aria-hidden="true"></span>
+          <span class="masthead__brand-tag">Est. 2018 · Feira de Santana, BA</span>
+        </a>
+
+        <nav class="masthead__nav" aria-label="Navegação principal">
+          <a href="../index.html">Home</a>
+          <a href="../sobre.html">Sobre</a>
+          <a href="../servicos/index.html">Serviços</a>
+          <a href="../setores/index.html">Setores</a>
+          <a href="../cases.html">Cases</a>
+          <a href="../blog/index.html">Blog</a>
+          <a href="../contato.html">Contato</a>
+        </nav>
+
+        <div class="masthead__cta">
+          <a href="../contato.html" class="btn btn--cream">Diagnóstico gratuito</a>
+        </div>
+
+        <button class="masthead__hamburger" aria-label="Abrir menu" aria-controls="nav-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav id="nav-drawer" class="nav-drawer" aria-hidden="true">
+    <button class="nav-drawer__close" aria-label="Fechar menu">Fechar ×</button>
+    <ul class="nav-drawer__list">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../sobre.html">Sobre</a></li>
+      <li><a href="../servicos/index.html">Serviços</a></li>
+      <li><a href="../setores/index.html">Setores</a></li>
+      <li><a href="../cases.html">Cases</a></li>
+      <li><a href="../blog/index.html">Blog</a></li>
+      <li><a href="../contato.html">Contato</a></li>
+    </ul>
+    <div class="nav-drawer__cta">
+      <a href="../contato.html" class="btn btn--cream btn--lg" style="width:100%; justify-content:center;">Diagnóstico gratuito</a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__grid">
+          <div>
+            <nav class="breadcrumb" aria-label="Você está aqui">
+              <a href="../index.html">Home</a><span class="sep">·</span><a href="index.html">Materiais</a><span class="sep">·</span><em>Calculadora</em>
+            </nav>
+            <span class="eyebrow eyebrow--gold">
+              <span class="gold-rule"></span>Material gratuito · interativo
+            </span>
+            <h1 class="display page-hero__h">
+              Calculadora de <em>Recuperação Tributária.</em>
+            </h1>
+            <p class="lead page-hero__lead">
+              Em <em>5 minutos</em>, estime o potencial de crédito tributário que sua empresa pode estar deixando na mesa. Cálculo baseado em médias setoriais. <em>Resultado meramente indicativo.</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculadora -->
+    <section style="background: var(--c-paper); padding: 64px 0;">
+      <div class="container" style="max-width: 800px;">
+
+        <div class="form" style="background: var(--c-cream);">
+          <h2 class="h3" style="margin-bottom: 24px; color: var(--c-ink);">Sobre sua empresa<em style="color: var(--c-gold);">.</em></h2>
+
+          <div class="form__field">
+            <label class="form__label" for="calc-faturamento">Faturamento anual aproximado (R$)</label>
+            <input class="form__input" id="calc-faturamento" type="number" min="0" step="100000" placeholder="Ex: 10000000" value="10000000">
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="calc-setor">Setor de atuação</label>
+            <select class="form__select" id="calc-setor">
+              <option value="varejo">Varejo / Supermercado</option>
+              <option value="atacado">Atacado / Distribuição</option>
+              <option value="industria">Indústria / Manufatura</option>
+              <option value="postos">Postos de Combustíveis</option>
+              <option value="servicos">Serviços</option>
+            </select>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="calc-regime">Regime tributário</label>
+            <select class="form__select" id="calc-regime">
+              <option value="real">Lucro Real</option>
+              <option value="presumido">Lucro Presumido</option>
+              <option value="simples">Simples Nacional</option>
+            </select>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="calc-funcionarios">Número de colaboradores</label>
+            <input class="form__input" id="calc-funcionarios" type="number" min="0" placeholder="Ex: 50" value="50">
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="calc-revisao">Quando foi a última revisão tributária?</label>
+            <select class="form__select" id="calc-revisao">
+              <option value="nunca">Nunca fizemos</option>
+              <option value="5anos">Mais de 5 anos</option>
+              <option value="3anos">3 a 5 anos</option>
+              <option value="1ano">1 a 2 anos</option>
+              <option value="recente">Menos de 1 ano</option>
+            </select>
+          </div>
+
+          <button type="button" id="calc-btn" class="btn btn--navy btn--lg form__submit">
+            Calcular estimativa <span class="arrow">→</span>
+          </button>
+        </div>
+
+        <!-- Resultado -->
+        <div id="calc-result" style="display: none; margin-top: 48px;">
+          <div class="summary-box" style="background: var(--c-navy); padding: 40px;">
+            <div style="text-align: center; padding-bottom: 24px;">
+              <span class="eyebrow eyebrow--gold" style="display: inline-block; margin-bottom: 16px;">
+                <span class="gold-rule"></span>Estimativa de potencial
+              </span>
+              <p style="font-family: var(--f-serif); font-size: 14px; font-style: italic; color: rgba(245,239,230,0.7); margin-bottom: 16px;">
+                Sua empresa pode ter um potencial de recuperação de:
+              </p>
+              <div style="font-family: var(--f-serif); font-size: 56px; line-height: 1; color: var(--c-cream); font-weight: 300; margin: 16px 0;">
+                <span style="color: var(--c-gold-soft); font-size: 0.5em;">R$</span> <span id="result-min">0</span>
+                <span style="color: var(--c-gold-soft); font-style: italic; font-size: 0.4em;">a</span>
+                <span id="result-max">0</span>
+              </div>
+              <p style="font-family: var(--f-serif); font-style: italic; font-size: 14px; color: var(--c-gold-soft); margin-top: 8px;">
+                em créditos tributários recuperáveis nos últimos 5 anos
+              </p>
+            </div>
+
+            <div style="border-top: 1px solid var(--c-navy-line); padding-top: 24px;">
+              <p style="font-family: var(--f-serif); font-size: 15px; line-height: 1.55; color: rgba(245,239,230,0.85);" id="result-detail">
+              </p>
+            </div>
+          </div>
+
+          <div style="background: var(--c-cream); padding: 32px; margin-top: 24px; border-left: 2px solid var(--c-gold);">
+            <span style="font-family: var(--f-sans); font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--c-gold); display: block; margin-bottom: 12px;">Importante</span>
+            <p style="font-family: var(--f-serif); font-size: 16px; line-height: 1.55; color: var(--c-ink-2); font-style: italic;">
+              Esta é uma <em>estimativa meramente indicativa</em>, baseada em médias setoriais. O potencial real depende da operação específica da sua empresa, da qualidade dos cadastros, do regime adotado e de teses tributárias aplicáveis. Para diagnóstico técnico preciso e gratuito, fale com a R2.
+            </p>
+          </div>
+
+          <div style="display: flex; gap: 16px; margin-top: 32px; flex-wrap: wrap; justify-content: center;">
+            <a href="../contato.html" class="btn btn--navy btn--lg">
+              Quero diagnóstico gratuito <span class="arrow">→</span>
+            </a>
+            <a href="https://wa.me/5575991117430?text=Ol%C3%A1%2C%20usei%20a%20calculadora%20no%20site%20da%20R2%20e%20quero%20conversar." target="_blank" rel="noopener" class="btn btn--ghost-ink btn--lg">
+              Falar pelo WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section class="bio-section" style="background: var(--c-cream);">
+      <div class="container">
+        <div class="bio-section__head">
+          <span class="eyebrow eyebrow--gold-ink">
+            <span class="gold-rule"></span>Como funciona o cálculo
+          </span>
+          <h2 class="h1 bio-section__h">
+            Metodologia <em>simplificada.</em>
+          </h2>
+        </div>
+        <p class="bio-section__body" style="font-style: normal;">
+          A calculadora aplica percentuais médios de recuperação observados por setor, regime e tempo desde a última revisão. O resultado é uma <em>faixa indicativa</em>, não uma promessa. Os fatores considerados:
+        </p>
+
+        <div class="valores-list" style="margin-top: 32px;">
+          <div class="valor-row">
+            <span class="valor-row__num">i.</span>
+            <h3 class="valor-row__title">Faturamento.</h3>
+            <p class="valor-row__desc">Base de cálculo principal. Recuperação típica fica entre 0,5% e 3% do faturamento anual.</p>
+          </div>
+          <div class="valor-row">
+            <span class="valor-row__num">ii.</span>
+            <h3 class="valor-row__title">Setor.</h3>
+            <p class="valor-row__desc">Indústria tem maior potencial (créditos de PIS/COFINS/IPI). Varejo e atacado têm crédito relevante em ICMS-ST.</p>
+          </div>
+          <div class="valor-row">
+            <span class="valor-row__num">iii.</span>
+            <h3 class="valor-row__title">Regime tributário.</h3>
+            <p class="valor-row__desc">Lucro Real geralmente tem mais oportunidades. Simples Nacional tem oportunidades restritas, especialmente em INSS sobre verbas indenizatórias.</p>
+          </div>
+          <div class="valor-row">
+            <span class="valor-row__num">iv.</span>
+            <h3 class="valor-row__title">Folha de pagamento.</h3>
+            <p class="valor-row__desc">Número de colaboradores influencia INSS recuperável sobre verbas indenizatórias.</p>
+          </div>
+          <div class="valor-row">
+            <span class="valor-row__num">v.</span>
+            <h3 class="valor-row__title">Tempo sem revisão.</h3>
+            <p class="valor-row__desc">Quanto mais tempo sem auditar, maior a probabilidade de crédito acumulado, respeitado o prazo prescricional de 5 anos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+    (function() {
+      // Percentuais médios de recuperação por setor (mínimo e máximo)
+      const setores = {
+        'varejo': { min: 0.005, max: 0.020 },        // 0,5% a 2%
+        'atacado': { min: 0.008, max: 0.030 },       // 0,8% a 3%
+        'industria': { min: 0.012, max: 0.040 },     // 1,2% a 4% (maior potencial)
+        'postos': { min: 0.003, max: 0.012 },        // 0,3% a 1,2%
+        'servicos': { min: 0.004, max: 0.018 }       // 0,4% a 1,8%
+      };
+
+      // Multiplicador por regime
+      const regimes = {
+        'real': 1.0,
+        'presumido': 0.6,
+        'simples': 0.2
+      };
+
+      // Multiplicador por tempo sem revisão (acúmulo)
+      const revisoes = {
+        'nunca': 1.4,
+        '5anos': 1.3,
+        '3anos': 1.0,
+        '1ano': 0.6,
+        'recente': 0.2
+      };
+
+      // Adicional por folha (INSS verbas indenizatórias)
+      function folhaBonus(funcionarios, regime) {
+        if (regime === 'simples') return 0;
+        // Estimativa: R$ 800-2.000 por colaborador no acumulado 5 anos
+        const min = funcionarios * 800;
+        const max = funcionarios * 2000;
+        return { min, max };
+      }
+
+      function formatNum(n) {
+        return n.toLocaleString('pt-BR', { maximumFractionDigits: 0 });
+      }
+
+      document.getElementById('calc-btn').addEventListener('click', function() {
+        const faturamento = parseFloat(document.getElementById('calc-faturamento').value) || 0;
+        const setor = document.getElementById('calc-setor').value;
+        const regime = document.getElementById('calc-regime').value;
+        const funcionarios = parseInt(document.getElementById('calc-funcionarios').value) || 0;
+        const revisao = document.getElementById('calc-revisao').value;
+
+        if (faturamento <= 0) {
+          alert('Informe um faturamento válido.');
+          return;
+        }
+
+        const s = setores[setor];
+        const regFator = regimes[regime];
+        const revFator = revisoes[revisao];
+        const folha = folhaBonus(funcionarios, regime);
+
+        // Cálculo principal: faturamento × % setorial × regime × revisão
+        let minPrincipal = faturamento * s.min * regFator * revFator;
+        let maxPrincipal = faturamento * s.max * regFator * revFator;
+
+        // Adiciona folha
+        const minTotal = minPrincipal + folha.min;
+        const maxTotal = maxPrincipal + folha.max;
+
+        // Mostrar resultado
+        document.getElementById('result-min').textContent = formatNum(minTotal);
+        document.getElementById('result-max').textContent = formatNum(maxTotal);
+
+        // Detalhamento textual
+        let detalhe = 'Estimativa baseada em:';
+        detalhe += '<br>· Faturamento informado de R$ ' + formatNum(faturamento);
+        detalhe += '<br>· Setor: ' + document.getElementById('calc-setor').options[document.getElementById('calc-setor').selectedIndex].text;
+        detalhe += '<br>· Regime: ' + document.getElementById('calc-regime').options[document.getElementById('calc-regime').selectedIndex].text;
+        detalhe += '<br>· ' + funcionarios + ' colaboradores (INSS verbas indenizatórias)';
+        detalhe += '<br>· Tempo sem revisão: ' + document.getElementById('calc-revisao').options[document.getElementById('calc-revisao').selectedIndex].text;
+
+        if (regime === 'simples') {
+          detalhe += '<br><br><em>Para Simples Nacional, o potencial é restrito e demanda análise específica.</em>';
+        }
+
+        document.getElementById('result-detail').innerHTML = detalhe;
+
+        document.getElementById('calc-result').style.display = 'block';
+        document.getElementById('calc-result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    })();
+    </script>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__col--r2 footer__col-r2">
+          <div class="footer__name">R2 Soluções Empresariais</div>
+          <p>
+            Rua Professor Fernando São Paulo, 238<br>
+            Ponto Central · Feira de Santana, BA<br>
+            CEP 44075-045
+          </p>
+          <p style="margin-top:16px;">
+            <a href="tel:+5575991117430">(75) 99111-7430</a><br>
+            <a href="tel:+5575999992113">(75) 99999-2113</a><br>
+            <a href="mailto:r2@solucoesr2.com.br">r2@solucoesr2.com.br</a><br>
+            <a href="https://www.instagram.com/r2solucoesempresariais" target="_blank" rel="noopener">@r2solucoesempresariais</a>
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-head">Serviços</div>
+          <div class="footer__list">
+            <a href="../servicos/tributario.html">Tributário</a>
+            <a href="../servicos/gestao-administrativa.html">Gestão Administrativa</a>
+            <a href="../servicos/gestao-financeira.html">Gestão Financeira</a>
+            <a href="../servicos/gestao-comercial.html">Gestão Comercial</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-head">Setores</div>
+          <div class="footer__list">
+            <a href="../setores/empresas-familiares.html">Empresa Familiar</a>
+            <a href="../setores/varejo-supermercados.html">Varejo</a>
+            <a href="../setores/atacado-distribuicao.html">Atacado</a>
+            <a href="../setores/postos-combustiveis.html">Postos</a>
+            <a href="../setores/industria-manufatura.html">Indústria</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-head">Recursos</div>
+          <div class="footer__list">
+            <a href="../blog/index.html">Blog</a>
+            <a href="../cases.html">Cases</a>
+            <a href="../parceiros.html">Parceiros</a>
+            <a href="../contato.html">Diagnóstico gratuito</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-head">Contato</div>
+          <div class="footer__list">
+            <a href="../contato.html">Página de contato</a>
+            <a href="../faq.html">Perguntas frequentes</a>
+            <a href="../trabalhe-conosco.html">Trabalhe conosco</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div>© 2026 R2 Soluções Empresariais</div>
+        <div class="footer__bottom-links">
+          <a href="../politica-privacidade.html">Política de Privacidade</a>
+          <a href="../politica-cookies.html">Política de Cookies</a>
+          <a href="../termos-uso.html">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5575991117430?text=Ol%C3%A1%2C%20vim%20do%20site%20da%20R2%20e%20queria%20conversar."
+     target="_blank" rel="noopener"
+     class="fab"
+     aria-label="Falar com a R2 pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+    </svg>
+  </a>
+
+  <div class="lgpd-banner" role="dialog" aria-label="Aviso de privacidade">
+    <div class="container">
+      <div class="lgpd-banner__inner">
+        <p class="lgpd-banner__text">
+          Usamos cookies para gerar estatísticas anonimizadas e melhorar sua experiência. Você decide. Mais detalhes na <a href="../politica-privacidade.html">Política de Privacidade</a>.
+        </p>
+        <div class="lgpd-banner__buttons">
+          <button class="btn btn--cream lgpd-banner__accept">Aceitar</button>
+          <button class="btn btn--ghost-light lgpd-banner__reject">Apenas necessários</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/main.js" defer></script>
+</body>
+</html>

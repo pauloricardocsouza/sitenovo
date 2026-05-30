@@ -60,7 +60,7 @@ def collect_pages():
             continue
         # Pular arquivos em pastas técnicas
         parts = rel.parts
-        if any(p in ("posts-md", "node_modules", ".git") for p in parts):
+        if any(p in ("posts-md", "node_modules", ".git", "revisao-copy") for p in parts):
             continue
         url = url_for(rel)
         mtime = datetime.fromtimestamp(path.stat().st_mtime).strftime("%Y-%m-%d")
